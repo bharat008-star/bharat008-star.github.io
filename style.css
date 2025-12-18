@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+h1 {
+    background-color: blue;
+    color: white;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+}
+
+
+.navbar {
+    background-color: lightblue;
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    position: relative;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 12px;
+}
+
+.nav-links a {
+    color: seagreen;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: orange;
+}
+
+.actions a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.hamburger {
+    display: none;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+#toggle {
+    display: none;
+}
+
+
+.container {
+    display: flex;
+    min-height: 300px;
+}
+
+
+.sidebar {
+    width: 250px;
+    background-color: lightgreen;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    margin-bottom: 15px;
+}
+
+.sidebar a {
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+.card {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+    float: inline-start;
+}
+
+.card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #444;
+    margin-bottom: 10px;
+}
+.price {
+    font-weight: bold;
+    color: #222;
+    font-size: 16px;
+}
+.btn {
+    width: 100%;
+    padding: 10px;
+    background: yellow;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background: rgb(59, 172, 166);
+}
+
+
+.form-section {
+    background-color: #eee;
+    padding: 20px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+}
+
+button {
+    padding: 8px 15px;
+    background-color: blue;
+    color: white;
+    border: none;
+}
+
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 55px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links li {
+        padding: 12px;
+        border-bottom: 1px solid #444;
+    }
+
+    #toggle:checked + .hamburger + .nav-links {
+        display: flex;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+}
