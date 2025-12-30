@@ -91,6 +91,7 @@ h1 {
 .main-content {
     width: 78%;
     padding: 3%;
+    align-self: center;
 }
 
 
@@ -107,7 +108,6 @@ h1 {
     padding: 20px;
     border-radius: 12px;
     text-align: center;
-    align-items: center;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
     width: 30%;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
